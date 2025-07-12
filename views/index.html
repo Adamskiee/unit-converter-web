@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-space=1.0" />
+    <title>Unit Converter</title>
+    <link rel='stylesheet'  href = '/css/style.css' />
+  </head>
+	<body>
+    <h1> Unit Converter</h1>
+    <div class='nav'>
+      <span id='length-nav'>Length</span>
+      <span id='weight-nav'>Weight</span>
+      <span id='temperature-nav'>Temperature</span>
+    </div>
+    <div class='length-container'>
+      <form action="/submit" id='myForm' method="POST" target='_self'>
+        <label for>Enter the length to convert</label>
+        <input type='number' name='length' id='length'>
+        
+        <br>  
+        <label>Unit to Convert from</label>
+        <select id='unit_from' name='unit_from'>
+          <option value='mm'>millimeter</option>   
+          <option value='cm'>centimeter</option>
+          <option value='m'>meter</option>
+          <option value='km'>kilometer</option>
+          <option value='in'>inch</option>
+          <option value='ft'>foot</option>
+          <option value='yd'>yard</option> 
+          <option value='mi'>mile</option>
+        </select>
+        <br>
+        <label>Unit to Convert to</label>
+        <select  id='unit_to' name='unit_to'> 
+          <option value='mm'>millimeter</option>   
+          <option value='cm'>centimeter</option>
+          <option value='m'>meter</option>
+          <option value='km'>kilometer</option>
+          <option value='in'>inch</option>
+          <option value='ft'>foot</option>
+          <option value='yd'>yard</option> 
+          <option value='mi'>mile</option>
+        </select>
+        <br>      
+        <button type='submit'> Convert </button>
+      </form>
+    </div>
+    
+    <div class='weight-container'>
+      <form action="/submit" method="POST">
+        <label for>Enter the length to convert</label>
+        <input type='number' name='length'>
+        
+        <br>  
+        <label>Unit to Convert from</label>
+        <input type='text' id='unit_from' name='unit_from'>
+        <br>
+        <label>Unit to Convert to</label>
+        <input type='text' id='unit_to' name='unit_to'>
+        <br>      
+        <button type='submit'> Convert </button>
+      </form>
+    </div>
+    
+    <div class='temperature-container'>
+      <form action="/submit" method="POST">
+        <label for>Enter the length to convert</label>
+        <input type='number'id='length'  name='length'>
+        
+        <br>  
+        <label>Unit to Convert from</label>
+        <input type='text' id='unit_from' name='unit_from'>
+        <br>
+        <label>Unit to Convert to</label>
+        <input type='text' id='unit_to' name='unit_to'>
+        <br>      
+        <button type='submit'> Convert </button>
+      </form>
+    </div>
+	</body>
+  <script src="/js/index.js" defer></script>
+</html>
